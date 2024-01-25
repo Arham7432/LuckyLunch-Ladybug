@@ -1,0 +1,287 @@
+/* Background Image 👻 */
+body {
+    background-color: black;
+}
+
+#cover {
+    background-image: url(navbarbg.jpg);
+    background-size: cover;
+}
+
+/* CSS RESET  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before {
+    content: "";
+    background-color: gray;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+/*  Navigation Bar :List Styling */
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    background-color: black;
+    color: darkgray;
+}
+
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 34px 45px;
+}
+
+#logo img {
+    height: 80px;
+    margin: -33px 10px;
+}
+
+/* Home Section🏡 */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+#home:before {
+    top: 0;
+    left: 0;
+}
+
+/* Hi Foodie! 🍕🍖  */
+#home h1 {
+    color: yellow;
+    font-family: 'Jost', sans-serif;
+    font-weight: 900;
+    border-radius: 5px;
+    padding: 3px 12px;
+    text-shadow: -6px 2px 2px black;
+    font-size: 2.7rem;
+}
+
+/* Utility Classess 📛 */
+.h-primary {
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2rem;
+    padding: 12px;
+}
+
+#home p {
+    font-family: "Lora", serif;
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+    font-size: 1.3rem;
+    padding: 3px 20px;
+    margin: 3px 189px;
+    text-align: center;
+
+}
+
+
+/* Button🔘 */
+#home button {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Buttons ✅  */
+.btn {
+    border: 2px solid black;
+    border-radius: 18px;
+    background-color: yellow;
+    padding: 6px 20px;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+    justify-content: center;
+    margin-left: 558px;
+    position: absolute;
+    top: 68%;
+}
+
+.btn:hover {
+    background-color: black;
+    color: yellow;
+}
+
+/* Cards 🃏🎴 */
+/* Main Heading of Services & Heading of Cards 👼🏻  */
+.h-primary-center {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    background-color: grey;
+    color: black;
+    border: 2px solid;
+    font-size: 2.2rem;
+    margin: 3px 99px;
+    border-radius: 8px;
+}
+
+.h-primary-center:hover {
+    background-color: rgba(169, 169, 169, 0.881);
+    cursor: pointer;
+}
+
+.h-secondary-center {
+    text-align: center;
+    color: yellow;
+    font-family: "Kalam", cursive;
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+#services {
+    display: flex;
+    padding: 14px;
+
+}
+
+#services .box {
+    color: aliceblue;
+    border-radius: 28px;
+    background-color: rgba(83, 2, 2, 0.87);
+    text-align: center;
+    margin: 4px;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    padding: 19px 4px;
+
+}
+
+#services .box:hover {
+    background-color: rgb(83, 2, 2);
+    box-shadow: 3px 3px magenta;
+
+}
+
+#services .box img {
+    display: block;
+    height: 160px;
+    margin: auto;
+}
+
+/* Clients 🤳🏻 */
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    height: 180px;
+}
+
+#client img {
+    height: 124px;
+    margin: 3px 18px;
+    background-image: url(https://th.bing.com/th/id/OIG.Y620ehIw0nTHhH6c0Cg5?pid=ImgGn);
+    background-size: cover;
+    border: 3px solid rgb(211, 220, 43);
+}
+
+#client img:hover {
+    box-shadow: 2px 2px white;
+}
+
+#h-primary-center {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    background-color: grey;
+    color: black;
+    border: 2px solid;
+    font-size: 2.2rem;
+    margin: 3px 99px;
+    border-radius: 8px;
+}
+
+#h-primary-center:hover {
+    background-color: rgba(169, 169, 169, 0.881);
+    cursor: pointer;
+    top: 40%;
+    position: relative;
+}
+
+/* Contact Us 📞 section */
+section #contact {
+    display: flex;
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    /* background-color: salmon; */
+    height: 50px;
+    z-index: -1;
+}
+
+footer {
+    background-color: rgb(61, 98, 99);
+    color: white;
+    padding: 9px 18px;
+    text-align: center;
+    justify-content: center;
+    /* height: 50px; */
+}
+
+#cell1,
+#cell2 {
+    color: gray;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 100;
+    display: block;
+}
+
+#cell2:hover {
+    cursor: pointer;
+    color: gold;
+}
+#cell1:hover{
+    cursor: pointer;
+    color: gold;
+}

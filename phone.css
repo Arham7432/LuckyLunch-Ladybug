@@ -1,0 +1,88 @@
+body {
+    background-color: gray;
+}
+
+#cover {
+    background-image: url(navbarbg.jpg);
+    background-size: cover;
+    position: sticky;
+}
+
+/* Home Section 🏡 */
+#home p {
+    font-size: 11px;
+    border-radius: 10px;
+    padding: 6px 20px;
+    margin: 1px;
+    top: 19%;
+    right: 37%;
+}
+
+#home h1 {
+    font-size: 1.6rem;
+    position: relative;
+    bottom: 8%;
+
+}
+
+/* Navigation Bar 🏹 */
+#navbar {
+    flex-direction: column;
+    position: static;
+    justify-content: space-between;
+}
+
+#navbar ul li a {
+    justify-content: space-between;
+    padding: 3px 8px;
+    font-size: 1.1rem;
+    margin: 5px 2px;;
+}
+
+/* Services Section 📞 */
+#services {
+    flex-direction: column;
+}
+
+#services .box {
+    position: relative;
+    left: 0.6%;
+}
+
+#h-primary {
+    font-size: 26px;
+}
+
+#cell1,
+#cell2 {
+    color: black;
+}
+
+#client {
+    overflow: hidden;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 6px 20px;
+    margin: 1px;
+    top: 15%;
+    right: 35%;
+}
+
+.h-primary-center {
+    position: relative;
+    right: 13%;
+    width: 244px;
+}
+
+#h-primary-center {
+    position: relative;
+    right: 13%;
+    width: 244px;
+}
+
+#client img {
+    margin: 5px 3px;
+    height: 86px;
+}
