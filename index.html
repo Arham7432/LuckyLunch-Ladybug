@@ -25,7 +25,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
+<style>
+     #progress {
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            height: 70px;
+            width: 70px;
+            display: none;
+            place-items: center;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
 
+        }
+
+        #progress-value {
+            display: block;
+            height: calc(100% - 15px);
+            width: calc(100% - 15px);
+            background-color: whitesmoke;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 35px;
+            color: black;
+            font-weight: 700;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+</style>
 </head>
 
 <body>
@@ -107,7 +139,13 @@
     </footer>
     <p id="cell1">📞Cell: 0300-2131229</p>
     <p id="cell2">📧Mail: arhamarhamhussain4@gmail.com</p><br>
+ <div id="progress">
+        <span id="progress-value"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+            <path d="M18 15C18 15 13.5811 9.00001 12 9C10.4188 8.99999 6 15 6 15" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg></span>
+    </div>
 
+    <script src="js/script.js"></script>
 
 </body>
 
